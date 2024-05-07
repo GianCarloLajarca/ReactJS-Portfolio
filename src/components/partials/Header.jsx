@@ -10,17 +10,17 @@ const Header = () => {
             </div>
             <div className='header-nav text-stone-500'>
                 <ul className='flex gap-16'>
-                    <li><Link to="/home">Home</Link></li>
-                    <li><Link to="/skills">Skills</Link></li>
-                    <li><Link to="/project">Project</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/database/home">Home</Link></li>
+                    <li><Link to="/database/skills">Skills</Link></li>
+                    <li><Link to="/database/project">Project</Link></li>
+                    <li><Link to="/database/contact">Contact</Link></li>
                 </ul>
             </div>
             <div className='header-language'>
                 <ul className='flex gap-4 text-stone-500 font-bold'>
-                    <li><Link to="/home">FRA</Link></li>
-                    <li><Link to="/skills">FER</Link></li>
-                    <li><Link to="/project" className='text-accent'>ENG</Link></li>
+                    <li>FRA</li>
+                    <li>FER</li>
+                    <li className='text-accent'>ENG</li>
                 </ul>
             </div>
         </header> 

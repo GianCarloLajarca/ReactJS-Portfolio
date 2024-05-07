@@ -44,7 +44,7 @@
 
   @layer base {
     body {
-        @apply bg-primary text-content font-regular
+        @apply bg-primary text-content font-regular 
     }
 
     a {
@@ -70,5 +70,22 @@
   }
 
   @layer components {
-    
+    .tab-link {
+      @apply px-3 py-5
+    }
+
+    .tab-link.active {
+      @apply border-b border-accent
+    }
+
+    .tab-link.active a {
+      @apply text-accent
+    }
+
   }
+
+
+  .slick-slide {
+      @apply px-5
+  }
+
