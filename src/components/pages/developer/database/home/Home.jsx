@@ -66,8 +66,8 @@ const handleShowProject = () => setProject(true);
     
     </section>
 
-    <section className='aboutMe py-24 bg-darkblue'>
-        <div className="container grid grid-cols-2 gap-36">
+    <section className='aboutMe py-24 bg-darkblue grid place-items-center'>
+        <div className="container grid grid-cols-2 gap-36 justify-center items-center place-items-center">
               <div className='aboutme-image size-[500px] mt-10'>
                <img src={`${baseImgUrl}/home/Profile-aboutme.png`} alt="" />
               </div>
