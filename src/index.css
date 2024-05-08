@@ -43,8 +43,13 @@
 
 
   @layer base {
+
+    html {
+      @apply scroll-smooth
+    }
+
     body {
-        @apply bg-primary text-content font-regular 
+        @apply bg-primary text-content font-regular overflow-x-hidden
     }
 
     a {
@@ -87,5 +92,17 @@
 
   .slick-slide {
       @apply px-5
+  }
+
+  .slick-dots {
+    @apply right-6 bottom-[-45px]
+  }
+
+  .slick-dots li.slick-active button:before {
+    @apply text-accent
+  }
+
+  .slick-dots li button:before {
+    @apply text-sm
   }
 

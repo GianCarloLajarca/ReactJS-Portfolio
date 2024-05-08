@@ -6,7 +6,7 @@ const Honors = () => {
     <div className='honors-grid grid grid-cols-3 gap-7 py-20 bg-darkblue'>
         <div className='honor-card pb-44 pt-5 px-10 '>
             <div className='honor-image bg-primary'>
-                <img src={`${baseImgUrl}/home/honor-1.jpg`} alt="" className=' object-cover'/>
+            <a href={`${baseImgUrl}/home/honor-1.jpg`} data-lightbox="image-1" data-title="Honor"><img src={`${baseImgUrl}/home/honor-1.jpg`} alt="" className=' object-cover'/></a>
             </div>
             <div className='honor-details flex flex-col gap-5 mt-5'>
                 <div className='honor-title'>
@@ -24,7 +24,7 @@ const Honors = () => {
         </div>
         <div className='honor-card pb-44 pt-5 px-10 '>
             <div className='honor-image bg-primary'>
-                <img src={`${baseImgUrl}/home/honor-2.jpg`} alt="" className=' object-cover'/>
+                <a href={`${baseImgUrl}/home/honor-2.jpg`} data-lightbox="image-1" data-title="Second Honor Awardee - First Semester of A.Y. 2022-2023"><img src={`${baseImgUrl}/home/honor-2.jpg`} alt="" className=' object-cover'/></a>
             </div>
             <div className='honor-details flex flex-col gap-5 mt-5'>
                 <div className='honor-title'>
@@ -49,7 +49,7 @@ const Honors = () => {
 
         <div className='honor-card pb-44 pt-5 px-10 '>
             <div className='honor-image bg-primary'>
-                <img src={`${baseImgUrl}/home/honor-3.png`} alt="" className=' object-cover'/>
+                <a href={`${baseImgUrl}/home/honor-3.png`} data-lightbox="image-1" data-title="First Honor Awardee - Second Semester of A.Y. 2021 - 2022"><img src={`${baseImgUrl}/home/honor-3.png`} alt="" className=' object-cover'/></a>
             </div>
             <div className='honor-details flex flex-col gap-5 mt-5'>
                 <div className='honor-title'>
@@ -68,7 +68,7 @@ const Honors = () => {
         </div>
         <div className='honor-card pb-44 pt-5 px-10 '>
             <div className='honor-image bg-primary'>
-                <img src={`${baseImgUrl}/home/honor-4.png`} alt="" className=' object-cover'/>
+            <a href={`${baseImgUrl}/home/honor-4.png`} data-lightbox="image-1" data-title="First Honor Awardee - First Semester of A.Y. 2021-2022"><img src={`${baseImgUrl}/home/honor-4.png`} alt="" className=' object-cover'/></a>
             </div>
             <div className='honor-details flex flex-col gap-5 mt-5'>
                 <div className='honor-title'>
@@ -87,7 +87,7 @@ const Honors = () => {
         </div>
         <div className='honor-card pb-44 pt-5 px-10 '>
             <div className='honor-image bg-primary'>
-                <img src={`${baseImgUrl}/home/honor-5.png`} alt="" className=' object-cover'/>
+            <a href={`${baseImgUrl}/home/honor-5.png`} data-lightbox="image-1" data-title="First Honor Awardee - Second Semester of A.Y. 2020 - 2021"><img src={`${baseImgUrl}/home/honor-5.png`} alt="" className=' object-cover'/></a>
             </div>
             <div className='honor-details flex flex-col gap-5 mt-5'>
                 <div className='honor-title'>
@@ -106,7 +106,7 @@ const Honors = () => {
         </div>
         <div className='honor-card pb-44 pt-5 px-10 '>
             <div className='honor-image bg-primary'>
-                <img src={`${baseImgUrl}/home/honor-6.jpg`} alt="" className=' object-cover'/>
+            <a href={`${baseImgUrl}/home/honor-6.jpg`} data-lightbox="image-1" data-title="Dean’s List - Third Honor for the 1st Semester A.Y. 2020-2021"><img src={`${baseImgUrl}/home/honor-6.jpg`} alt="" className=' object-cover'/></a>
             </div>
             <div className='honor-details flex flex-col gap-5 mt-5'>
                 <div className='honor-title'>

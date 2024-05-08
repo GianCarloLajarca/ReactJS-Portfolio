@@ -6,7 +6,8 @@ const TopPerforming = () => {
     <div className='honors-grid grid grid-cols-3 gap-7 py-20 bg-darkblue'>
         <div className='honor-card pb-44 pt-5 px-10 '>
             <div className='honor-image bg-primary'>
-                <img src={`${baseImgUrl}/home/topperforming-1.jpg`} alt="" className=' object-cover'/>
+                {/* <img src={`${baseImgUrl}/home/topperforming-1.jpg`} alt="" className=' object-cover'/> */}
+                <a href={`${baseImgUrl}/home/topperforming-1.jpg`} data-lightbox="image-1" data-title="Top Student in Data Structure and Algorithms"><img src={`${baseImgUrl}/home/topperforming-1.jpg`} alt="" className=' object-cover'/></a>
             </div>
             <div className='honor-details flex flex-col gap-5 mt-5'>
                 <div className='honor-title'>
@@ -25,7 +26,8 @@ const TopPerforming = () => {
 
         <div className='honor-card pb-44 pt-5 px-10 '>
             <div className='honor-image bg-primary'>
-                <img src={`${baseImgUrl}/home/topperforming-2.png`} alt="" className=' object-cover'/>
+                {/* <img src={`${baseImgUrl}/home/topperforming-2.png`} alt="" className=' object-cover'/> */}
+                <a href={`${baseImgUrl}/home/topperforming-2.png`} data-lightbox="image-1" data-title="Top Student in IT Elective 2 Information Security"><img src={`${baseImgUrl}/home/topperforming-2.png`} alt="" className=' object-cover'/></a>
             </div>
             <div className='honor-details flex flex-col gap-5 mt-5'>
                 <div className='honor-title'>
@@ -44,7 +46,8 @@ const TopPerforming = () => {
 
         <div className='honor-card pb-44 pt-5 px-10 '>
             <div className='honor-image bg-primary'>
-                <img src={`${baseImgUrl}/home/topperforming-3.png`} alt="" className=' object-cover'/>
+                {/* <img src={`${baseImgUrl}/home/topperforming-3.png`} alt="" className=' object-cover'/> */}
+                <a href={`${baseImgUrl}/home/topperforming-3.png`} data-lightbox="image-1" data-title="Top Student in Fundamentals of Database Systems"><img src={`${baseImgUrl}/home/topperforming-3.png`} alt="" className=' object-cover'/></a>
             </div>
             <div className='honor-details flex flex-col gap-5 mt-5'>
                 <div className='honor-title'>
@@ -63,7 +66,8 @@ const TopPerforming = () => {
 
         <div className='honor-card pb-44 pt-5 px-10 '>
             <div className='honor-image bg-primary'>
-                <img src={`${baseImgUrl}/home/topperforming-4.png`} alt="" className=' object-cover'/>
+                {/* <img src={`${baseImgUrl}/home/topperforming-4.png`} alt="" className=' object-cover'/> */}
+                <a href={`${baseImgUrl}/home/topperforming-4.png`} data-lightbox="image-1" data-title="Top Student in IT Elective 2 Information Security"><img src={`${baseImgUrl}/home/topperforming-4.png`} alt="" className=' object-cover'/></a>
             </div>
             <div className='honor-details flex flex-col gap-5 mt-5'>
                 <div className='honor-title'>

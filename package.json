@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.34.2",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "formik": "^2.4.6",
+    "lightbox2": "^2.11.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.0",

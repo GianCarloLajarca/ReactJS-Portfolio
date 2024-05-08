@@ -14,19 +14,25 @@ import { FaLocationDot } from 'react-icons/fa6'
 import { HiDevicePhoneMobile } from 'react-icons/hi2'
 import TopPerforming from './TopPerforming'
 import Certifications from './Certifications'
+import ModalProject from './ModalProject'
+import 'animate.css';
 
 
 
 const Home = () => {
+  const [showProjectInterface, setProjectInterface] = React.useState(false)
   const [certTab, setCertTab] = React.useState('honors');
 
   const handleChangeCert = (cert) => {
     setCertTab(cert)
 }
 
+
+const handleShowProject = () => setProject(true);
+
   return (
     <>
-    <section className='h-screen w-screen'>
+    <section id='banner' className='h-screen w-screen'>
         <Header />
     
     <div className='hero-banner grid grid-cols-2 gap-12 relative'>
@@ -36,11 +42,12 @@ const Home = () => {
             <p className='w-auto leading-8'>This is <span className='text-accent'>Gian Carlo Lajarca</span>, 
             a passionate and creative BS Information Technology student specializing in web design and development.</p>
 
-             <button className='py-4 px-10 uppercase bg-accent text-primary font-thick w-48'>Download CV</button>
+             <a href={`${baseImgUrl}/home/resume-1.png`} data-lightbox="image-1" data-title="Resume" className='py-4 px-10 uppercase bg-accent text-primary font-thick w-48 text-center 
+             border border-accent hover:bg-transparent hover:text-white hover:border hover:border-light transition-all'>View Resume</a>
              <div className='hero-banner-icons flexitems-end'>
               <ul className='flex flex-row gap-6 text-2xl mt-48'>
                 <li><FaFacebook /></li>
-                <li><FaLinkedin className='text-accent'/></li>
+                <li><FaLinkedin /></li>
                 <li><FaInstagram /></li>
                 <li><FaTwitter /></li>
               </ul>
@@ -52,8 +59,8 @@ const Home = () => {
                 <img src={`${baseImgUrl}/home/lajarca-gian.png`} alt="" />
             </div>
         </div>
-      <div className='banner-scroll rotate-90 absolute translate-y-[44rem] translate-x-[100rem]'>
-            <h4 className='flex flex-row items-center gap-5 uppercase text-md text-accent font-normal'>Scroll Down <MdArrowRightAlt className='text-3xl'/></h4>
+      <div  className='banner-scroll rotate-90 absolute translate-y-[44rem] translate-x-[100rem]'>
+            <h4 className='flex flex-row items-center gap-5 uppercase text-md text-accent font-normal' >Scroll Down <MdArrowRightAlt className='text-3xl'/></h4>
       </div>
     </div>
     
@@ -81,14 +88,17 @@ const Home = () => {
                 </ul>
 
                 <div className='aboutme-btn flex flex-row gap-12'>
-                    <button className='uppercase bg-accent py-2 px-10 text-primary font-semibold'>Hire me</button>
-                    <button className='uppercase flex flex-row items-center gap-2 bg-accent  py-2 px-10  text-primary font-semibold'><MdOutlineHorizontalRule className='font-bold text-lg'/> <span><MdArrowRightAlt className='text-4xl'/></span></button>
+                    <button className='uppercase bg-accent py-2 px-10 text-primary font-semibold  border border-accent hover:bg-transparent hover:text-white hover:border hover:border-light transition-all'>Hire me</button>
+                    <button className='uppercase flex flex-row items-center gap-2 bg-accent  py-2 px-10  text-primary font-semibold  border border-accent hover:bg-transparent hover:text-white hover:border hover:border-light transition-all'><MdOutlineHorizontalRule className='font-bold text-lg'/> <span><MdArrowRightAlt className='text-4xl'/></span></button>
                 </div>
               </div>
         </div>
     </section>
 
-    <SliderSkills/>
+<section id='skills'>
+  <SliderSkills />
+</section>
+    
 
     <section className='resume py-36 bg-darkblue'>
       <div className='container ml-48 '>
@@ -169,9 +179,9 @@ const Home = () => {
             
           <div className='tab flex justify-between items-center mt-8  mb-8 w-[30rem] max-w-[26rem] mx-auto'>
             <ul className='flex gap-12'>
-                  <li className='font-bold'><button className={`${certTab==="honors" ? "text-accent border-b border-accent" : ""}`} onClick={() => handleChangeCert("honors")}>Honors</button></li>
-                  <li className='font-bold whitespace-nowrap'><button className={`${certTab==="topstudent" ? "text-accent border-b border-accent" : ""}`} onClick={() => handleChangeCert("topstudent")}>Top Performing Student</button></li>
-                  <li className='font-bold'><button className={`${certTab==="certifications" ? "text-accent border-b border-accent" : ""}`} onClick={() => handleChangeCert("certifications")}>Certifications</button></li>
+                  <li className='font-bold'><button className={`${certTab==="honors" ? "text-accent border-b border-accent" : "hover:text-accent transition-all"}`} onClick={() => handleChangeCert("honors")}>Honors</button></li>
+                  <li className='font-bold whitespace-nowrap'><button className={`${certTab==="topstudent" ? "text-accent border-b border-accent" : "hover:text-accent transition-all"}`} onClick={() => handleChangeCert("topstudent")}>Top Performing Student</button></li>
+                  <li className='font-bold'><button className={`${certTab==="certifications" ? "text-accent border-b border-accent" : "hover:text-accent transition-all"}`} onClick={() => handleChangeCert("certifications")}>Certifications</button></li>
             </ul>
 
           </div>
@@ -182,7 +192,11 @@ const Home = () => {
 
     </section>
 
-    <SliderProjects/>
+<section id='project'>
+  <SliderProjects setProjectInterface={setProjectInterface}/>
+  {/* <SliderBasic setMovieInfo={setMovieInfo} movies={movies} setMovieData={setMovieData} grouping="trending" sliderHeader = "Trending Movies"/> */}
+</section>
+    
     
     <section className='cta bg-darkblue py-28'>
             <div className='cta-content flex flex-col gap-12 text-center'>
@@ -195,7 +209,7 @@ const Home = () => {
     </section>
 
 
-    <section className='contact py-40 px-72'>
+    <section id='contact' className='contact py-40 px-72'>
          <div className='grid grid-cols-2 gap-24'>
               <div className="contact-info flex flex-col gap-12">
                   <h2 className='text-5xl text-accent'>Contact</h2>
@@ -219,14 +233,16 @@ const Home = () => {
                     <div className="input-row flex justify-between mb-[20px] basis-full">
                           <div className="input-group">
                               <label className='mb-[6px] block text-[#5A5A5A]'>Name</label>
-                              <input type="text" placeholder='' className='text-primary w-full border-[none] border-b-[1px_solid_#ccc] outline-[none] pb-[5px] bg-none'/>
+                              <input type="text" placeholder='' className='text-primary w-full border-[none] border-b-[1px_solid_#ccc] outline-[none] pb-[5px] bg-none w-[350px]
+                              py-2 px-2'/>
                           </div>
                     </div>
 
                     <div className="input-row flex justify-between mb-[20px] basis-full">
                           <div className="input-group">
                               <label className='mb-[6px] block text-[#5A5A5A]'>Email</label>
-                              <input type="text" placeholder='' className='text-primary w-full border-[none] border-b-[1px_solid_#ccc] outline-[none] pb-[5px] bg-none'/>
+                              <input type="text" placeholder='' className='text-primary w-full border-[none] border-b-[1px_solid_#ccc] outline-[none] pb-[5px] bg-none 
+                              bg-none w-[350px] py-2 px-2'/>
                           </div>
                     </div>
 
@@ -245,6 +261,10 @@ const Home = () => {
          </div>
     </section>
 
+{showProjectInterface && <ModalProject setProjectInterface={setProjectInterface}/>}
+
+
+{/* {showMovieInfo && <ModalMovieInfo setMovieInfo={setMovieInfo} movieData={movieData}/>} */}
 
     <Footer />
     </>

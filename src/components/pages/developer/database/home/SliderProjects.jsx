@@ -6,7 +6,11 @@ import { MdOutlineSecurity } from 'react-icons/md';
 import Slider from "react-slick";
 import { baseImgUrl } from '../../../../helpers/functions-general';
 
-const SliderSkills = () => {
+const SliderSkills = ({setProjectInterface}) => {
+
+    const handleShowProjectInterface = () => {
+        setProjectInterface(true)
+    }
 
     var settings = {
         dots: true,
@@ -25,7 +29,7 @@ const SliderSkills = () => {
                 <p className='text-md text-stone-300 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam exercitationem at aspernatur eligendi labore corrupti.</p>
         </div>
             <Slider {...settings} className='px-20'>
-                <div className='projects-card p-5 text-center bg-darkblue shadow-md'>
+                <div className='projects-card p-5 text-center bg-darkblue shadow-md h-[600px] hover:bg-accent hover:bg-opacity-40 transition-all'>
                     <div className='flex flex-col gap-4 p-12'>
                     <img src={`${baseImgUrl}/home/projects-1.png`} alt="" className='w-full h-[14 rem] mx-auto object-fill'/>
                         <h3>Simon Game</h3>
@@ -34,7 +38,7 @@ const SliderSkills = () => {
                         
                     </div>   
                 </div>
-                <div className='projects-card p-5 text-center bg-darkblue shadow-md'>
+                <div className='projects-card p-5 text-center bg-darkblue shadow-md h-[600px] hover:bg-accent  hover:bg-opacity-40 transition-all'>
                     <div className='flex flex-col gap-4 p-12'>
                     <img src={`${baseImgUrl}/home/projects-2.png`} alt="" className='w-full h-[14rem] mx-auto object-fill'/>
                         <h3>Drum Kit</h3>
@@ -42,7 +46,7 @@ const SliderSkills = () => {
                     </div>   
                 </div>
 
-                <div className='projects-card p-5 text-center bg-darkblue shadow-md'>
+                <div className='projects-card p-5 text-center bg-darkblue shadow-md h-[600px] hover:bg-accent  hover:bg-opacity-40 transition-all'>
                     <div className='flex flex-col gap-4 p-12'>
                     <img src={`${baseImgUrl}/home/projects-3.png`} alt="" className='w-full h-[14rem] mx-auto object-fill'/>
                         <h3>Dice Game</h3>
@@ -52,7 +56,7 @@ const SliderSkills = () => {
                     </div>   
                 </div>
 
-                <div className='projects-card p-5 text-center bg-darkblue shadow-md'>
+                <div className='projects-card p-5 text-center bg-darkblue shadow-md h-[600px] hover:bg-accent  hover:bg-opacity-40 transition-all'>
                     <div className='flex flex-col gap-4 p-12'>
                         <img src={`${baseImgUrl}/home/projects-4.png`} alt="" className='w-full h-[14rem]  mx-auto object-fill'/>
                         <h3>Creative Design Agency Website</h3>
@@ -61,7 +65,7 @@ const SliderSkills = () => {
                     </div>   
                 </div>
 
-                <div className='projects-card p-5 text-center bg-darkblue shadow-md'>
+                <div className='projects-card p-5 text-center bg-darkblue shadow-md h-[600px] hover:bg-accent  hover:bg-opacity-40 transition-all'>
                     <div className='flex flex-col gap-4 p-12'>
                     <img src={`${baseImgUrl}/home/projects-5.png`} alt="" className='w-full h-[14rem]  mx-auto object-fill'/>
                         <h3>Move It</h3>
@@ -69,7 +73,7 @@ const SliderSkills = () => {
                             At MoveIt, we prioritize customer satisfaction, striving to make every move seamless and enjoyable. </p>
                     </div>   
                 </div>
-                <div className='projects-card p-5 text-center bg-darkblue shadow-md'>
+                <div className='projects-card p-5 text-center bg-darkblue shadow-md h-[600px] hover:bg-accent  hover:bg-opacity-40 transition-all'>
                     <div className='flex flex-col gap-4 p-12'>
                         <img src={`${baseImgUrl}/home/projects-6.png`} alt="" className='w-full h-[14rem] mx-auto object-fill'/>
                         <h3>TinDog</h3>
@@ -77,6 +81,19 @@ const SliderSkills = () => {
                              </p>
                     </div>   
                 </div>
+
+                <button  onClick={() => handleShowProjectInterface()}>
+                    <div className='projects-card p-5 text-center bg-darkblue shadow-md h-[600px] hover:bg-accent  hover:bg-opacity-40 transition-all'>
+                    <div className='flex flex-col gap-4 p-12'>
+                        <img src={`${baseImgUrl}/home/projects-7.png`} alt="" className='w-full h-[14rem] mx-auto object-fill'/>
+                        <h3>WonderTour</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, veniam ex? Repellendus minus omnis laudantium iste? Natus, quae ab soluta doloremque earum aliquam eaque non obcaecati, a odit, eum alias!</p>
+                    </div>   
+                    </div>
+
+                </button>
+                
+               
 
             </Slider>
         </div>

@@ -6,7 +6,9 @@ const Certifications = () => {
     <div className='certs-grid grid grid-cols-3 gap-7 py-20 bg-darkblue'>
         <div className='cert-card pb-44 pt-5 px-10 '>
             <div className='cert-image bg-primary'>
-                <img src={`${baseImgUrl}/home/cert-1.jpg`} alt="" className=' object-cover'/>
+                {/* <img src={`${baseImgUrl}/home/cert-1.jpg`} alt="" className=' object-cover'/> */}
+                <a href={`${baseImgUrl}/home/cert-1.jpg`} data-lightbox="image-1" data-title="CompTIA IT Fundamentals ITF+ Certification"><img src={`${baseImgUrl}/home/cert-1.jpg`} alt="" className=' object-cover'/></a>
+                
             </div>
             <div className='cert-details flex flex-col gap-5 mt-5'>
                 <div className='cert-title'>
@@ -24,7 +26,8 @@ const Certifications = () => {
         </div>
         <div className='cert-card pb-44 pt-5 px-10 '>
             <div className='cert-image bg-primary'>
-                <img src={`${baseImgUrl}/home/cert-2.jpg`} alt="" className=' object-cover'/>
+                {/* <img src={`${baseImgUrl}/home/cert-2.jpg`} alt="" className=' object-cover'/> */}
+                <a href={`${baseImgUrl}/home/cert-2.jpg`} data-lightbox="image-1" data-title="SAP Certified Application Associate - SAP Business One"><img src={`${baseImgUrl}/home/cert-2.jpg`} alt="" className=' object-cover'/></a>
             </div>
             <div className='cert-details flex flex-col gap-5 mt-5'>
                 <div className='cert-title'>
@@ -42,7 +45,7 @@ const Certifications = () => {
         </div>
         <div className='cert-card pb-44 pt-5 px-10 '>
             <div className='cert-image bg-primary'>
-                <img src={`${baseImgUrl}/home/cert-3.jpg`} alt="" className=' object-cover'/>
+                <a href={`${baseImgUrl}/home/cert-3.jpg`} data-lightbox="image-1" data-title="SAP Certified Application Associate - SAP Business One"><img src={`${baseImgUrl}/home/cert-3.jpg`} alt="" className=' object-cover'/></a>
             </div>
             <div className='cert-details flex flex-col gap-5 mt-5'>
                 <div className='cert-title'>
@@ -61,7 +64,7 @@ const Certifications = () => {
 
         <div className='cert-card pb-44 pt-5 px-10 '>
             <div className='cert-image bg-primary'>
-                <img src={`${baseImgUrl}/home/cert-4.jpg`} alt="" className=' object-cover'/>
+                <a href={`${baseImgUrl}/home/cert-4.jpg`} data-lightbox="image-1" data-title="SAP Certified Application Associate - SAP Business One"><img src={`${baseImgUrl}/home/cert-4.jpg`} alt="" className=' object-cover'/></a>
             </div>
             <div className='cert-details flex flex-col gap-5 mt-5'>
                 <div className='cert-title'>
@@ -80,7 +83,7 @@ const Certifications = () => {
 
         <div className='cert-card pb-44 pt-5 px-10 '>
             <div className='cert-image bg-primary'>
-                <img src={`${baseImgUrl}/home/cert-6.jpg`} alt="" className=' object-cover'/>
+                <a href={`${baseImgUrl}/home/cert-6.jpg`} data-lightbox="image-1" data-title="MasterClass 101"><img src={`${baseImgUrl}/home/cert-6.jpg`} alt="" className=' object-cover'/></a>
             </div>
             <div className='cert-details flex flex-col gap-5 mt-5'>
                 <div className='cert-title'>
@@ -98,7 +101,7 @@ const Certifications = () => {
         </div>
         <div className='cert-card pb-44 pt-5 px-10 '>
             <div className='cert-image bg-primary'>
-                <img src={`${baseImgUrl}/home/cert-5.jpg`} alt="" className=' object-cover'/>
+                <a href={`${baseImgUrl}/home/cert-5.jpg`} data-lightbox="image-1" data-title="Campus DEVCON"><img src={`${baseImgUrl}/home/cert-5.jpg`} alt="" className=' object-cover'/></a> 
             </div>
             <div className='cert-details flex flex-col gap-5 mt-5'>
                 <div className='cert-title'>
