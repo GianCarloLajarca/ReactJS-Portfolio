@@ -1,8 +1,8 @@
 import React from 'react'
 import { baseImgUrl } from '../../../../helpers/functions-general'
 import { Form, Link } from 'react-router-dom'
-import { MdArrowRightAlt, MdEmail, MdOutlineHorizontalRule } from 'react-icons/md'
-import { FaBriefcase, FaFacebook, FaHome, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from 'react-icons/fa'
+import { MdArrowRightAlt, MdDownload, MdEmail, MdOutlineDevices, MdOutlineHorizontalRule } from 'react-icons/md'
+import { FaBriefcase, FaCode, FaFacebook, FaGithub, FaHome, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from 'react-icons/fa'
 import Header from '../../../../partials/Header'
 import Footer from '../../../../partials/Footer'
 import { RiVipCrownLine } from 'react-icons/ri'
@@ -16,6 +16,7 @@ import TopPerforming from './TopPerforming'
 import Certifications from './Certifications'
 import ModalProject from './ModalProject'
 import 'animate.css';
+import { IoDiamondSharp } from 'react-icons/io5'
 
 
 
@@ -25,8 +26,15 @@ const Home = () => {
 
   const handleChangeCert = (cert) => {
     setCertTab(cert)
-}
+  }
 
+  //download resume
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '../../img/home/CV-RESUME-LAJARCA.pdf';
+    link.download = 'CV-RESUME-LAJARCA.pdf';
+    link.click();
+  };
 
 const handleShowProject = () => setProject(true);
 
@@ -42,14 +50,17 @@ const handleShowProject = () => setProject(true);
             <p className='w-auto leading-8'>This is <span className='text-accent'>Gian Carlo Lajarca</span>, 
             a passionate and creative BS Information Technology student specializing in web design and development.</p>
 
-             <a href={`${baseImgUrl}/home/resume-1.png`} data-lightbox="image-1" data-title="Resume" className='py-4 px-10 uppercase bg-accent text-primary font-thick w-48 text-center 
-             border border-accent hover:bg-transparent hover:text-white hover:border hover:border-light transition-all'>View Resume</a>
+             <button className='py-4  uppercase bg-accent text-primary font-thick w-48 text-center 
+             border border-accent hover:bg-transparent hover:text-white hover:border hover:border-light transition-all
+             flex gap-2 items-center justify-center' onClick={handleDownloadResume}>Download CV <span className='text-xl'><MdDownload /></span></button>
              <div className='hero-banner-icons flexitems-end'>
               <ul className='flex flex-row gap-6 text-2xl mt-48'>
-                <li><FaFacebook /></li>
-                <li><FaLinkedin /></li>
-                <li><FaInstagram /></li>
-                <li><FaTwitter /></li>
+                <li className='cursor-pointer hover:text-accent transition-all'><FaFacebook /></li>
+                <li className='cursor-pointer hover:text-accent transition-all'><FaLinkedin /></li>
+                <li className='cursor-pointer hover:text-accent transition-all'><FaGithub /></li>
+                <li className='cursor-pointer hover:text-accent transition-all'><FaInstagram /></li>
+                <li className='cursor-pointer hover:text-accent transition-all'><FaTwitter /></li>
+                <li className='cursor-pointer hover:text-accent transition-all'><MdEmail /></li>
               </ul>
             </div>
         </div>
@@ -68,15 +79,16 @@ const handleShowProject = () => setProject(true);
 
     <section className='aboutMe py-24 bg-darkblue grid place-items-center'>
         <div className="container grid grid-cols-2 gap-36 justify-center items-center place-items-center">
-              <div className='aboutme-image size-[500px] mt-10'>
+              <div className='aboutme-image size-[500px]'>
                <img src={`${baseImgUrl}/home/Profile-aboutme.png`} alt="" />
               </div>
               <div className='aboutme-content flex flex-col gap-10'>
                 <h2 className='flex gap-2 items-center text-accent text-2xl tracking-wide uppercase'><MdOutlineHorizontalRule />About Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos totam labore, quam inventore suscipit nulla. Magnam iusto aspernatur, 
-                  illum est laborum deleniti in dolorem voluptatem quos, mollitia consequuntur reiciendis dolore maiores, ad aliquid ratione.</p>
+                <p className='text-justify'>Hello! I'm Gian Carlo Lajarca, a fourth-year college student at De La Salle Lipa pursuing a Bachelor of Science in Information Technology. Throughout my academic journey, I have consistently demonstrated a passion for excellence and a dedication to learning.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae quas aliquam illo ipsam quis, ratione adipisci?</p>
+                <p className='text-justify'>As a Dean's lister from my first year to my current fourth year, I have maintained high academic standards while actively engaging in various courses and projects.
+My time at De La Salle Lipa has not only equipped me with technical skills and knowledge but also instilled in me a strong work ethic and a commitment to continuous improvement. I am eager to apply my expertise in Information Technology to real-world challenges and contribute positively to the field.
+ Thank you for visiting my portfolio. I invite you to explore my projects and experiences to learn more about my journey and accomplishments</p>
 
                 <ul className='flex flex-col gap-3'>
                   <li className='flex gap-24'>Name: <span>Gian Carlo Lajarca</span></li>
@@ -89,10 +101,78 @@ const handleShowProject = () => setProject(true);
 
                 <div className='aboutme-btn flex flex-row gap-12'>
                     <button className='uppercase bg-accent py-2 px-10 text-primary font-semibold  border border-accent hover:bg-transparent hover:text-white hover:border hover:border-light transition-all'>Hire me</button>
-                    <button className='uppercase flex flex-row items-center gap-2 bg-accent  py-2 px-10  text-primary font-semibold  border border-accent hover:bg-transparent hover:text-white hover:border hover:border-light transition-all'><MdOutlineHorizontalRule className='font-bold text-lg'/> <span><MdArrowRightAlt className='text-4xl'/></span></button>
+                    <a href={`${baseImgUrl}/home/resume-1.png`} data-lightbox="image-1" data-title="Resume" className='py-4 px-10 uppercase bg-accent text-primary font-thick w-48 text-center 
+             border border-accent hover:bg-transparent hover:text-white hover:border hover:border-light transition-all'>View Resume</a>
                 </div>
               </div>
         </div>
+    </section>
+
+    <section className='service-area bg-primary pt-[115px] px-[0] pb-[120px] block box-border text-[16px] text-[#818181] font-[400] leading-[1.5] text-left grid place-content-center'>
+      <div className="container w-full px-[15px] box-border ">
+
+          <div className='flex flex-wrap mx-[-15px] box-border'>
+            <div className='text-center relative w-full min-h-[1px] px-[15px] box-border'>
+                <div className='section-title text-center mb-[57px] '>
+                    <span className='subtitle text-[16px] font-semibold text-[#d1d1d1] leading-[26px] block box-border text-center'>Service</span>
+                    <h2 className='mb-[16px] text-[32px] leading-[38px] font-bold text-accent'>What I do</h2>
+                    <p className='text-[16px] text-[#d0d0d0] max-w-[720px] mx-[auto] my-[0] leading-[1.625] text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo orci odio, ut bus sed. Phasellus vitae ullamcorper
+                    purus. Curabitur vel vestibulum justo.</p>
+
+                </div>
+            </div>
+
+          </div>
+
+          <div className='flex flex-row flex-wrap gap-8'>
+            <div className='row flex flex-wrap mr-[15px] ml-[15px] box-border basis[49%]'>
+                              <div className='service-card relative w-full min-h-[1px] pr-[15px] pl-[15px] w-72'>
+                                    <div className='single-service-box text-center border-[1px] border-[solid] border-[rgba(255,255,255,0.3)] rounded-[5px] px-[0] py-[60px]
+                                    [transition:all_0.3s_ease-in] relative z-0 hover:bg-accent hover:text-darkblue transition-all hover:bg-opacity-70'>
+                                          <div className="icon text-[52px] leading-[62px] text-[#fff] mb-[18px] box-border visible text-center">
+                                                <IoDiamondSharp className='!font-[IcoFont] not-italic font-normal [font-variant:normal] normal-case whitespace-nowrap [word-wrap:normal] [direction:ltr] leading-none antialiased
+                                                text-[52px] text-white text-center mx-auto hover:text-darkblue'/>
+                                          </div>
+
+                                          <div className="service-card-content box-border visible text-center text-[16px] text-[#818181] font-[400] leading-[1.5]">
+                                                <h4 className='text-[20px] font-semibold text-[#fff] leading-[1.2380952380952381] mb-[.5rem] mt-0 text-center hover:text-darkblue'>UI / UX</h4>
+                                          </div>
+                                    </div>
+                              </div>
+            </div>
+            <div className='row flex flex-wrap mr-[15px] ml-[15px] box-border basis[49%]'>
+                              <div className='service-card relative w-full min-h-[1px] pr-[15px] pl-[15px] w-72'>
+                                    <div className='single-service-box text-center border-[1px] border-[solid] border-[rgba(255,255,255,0.3)] rounded-[5px] px-[0] py-[60px]
+                                    [transition:all_0.3s_ease-in] relative z-0 hover:bg-accent hover:text-darkblue transition-all hover:bg-opacity-70'>
+                                          <div className="icon text-[52px] leading-[62px] text-[#fff] mb-[18px] box-border visible text-center">
+                                                <MdOutlineDevices className='!font-[IcoFont] not-italic font-normal [font-variant:normal] normal-case whitespace-nowrap [word-wrap:normal] [direction:ltr] leading-none antialiased
+                                                text-[52px] text-white text-center mx-auto'/>
+                                          </div>
+
+                                          <div className="service-card-content box-border visible text-center text-[16px] text-[#818181] font-[400] leading-[1.5]">
+                                                <h4 className='text-[20px] font-semibold text-[#fff] leading-[1.2380952380952381] mb-[.5rem] mt-0 text-center'>Web Development</h4>
+                                          </div>
+                                    </div>
+                              </div>
+            </div>
+            <div className='row flex flex-wrap mr-[15px] ml-[15px] box-border basis[49%]'>
+                              <div className='service-card relative w-full min-h-[1px] pr-[15px] pl-[15px] w-72'>
+                                    <div className='single-service-box text-center border-[1px] border-[solid] border-[rgba(255,255,255,0.3)] rounded-[5px] px-[0] py-[60px]
+                                    [transition:all_0.3s_ease-in] relative z-0 hover:bg-accent hover:text-darkblue transition-all hover:bg-opacity-70'>
+                                          <div className="icon text-[52px] leading-[62px] text-[#fff] mb-[18px] box-border visible text-center">
+                                                <FaCode className='!font-[IcoFont] not-italic font-normal [font-variant:normal] normal-case whitespace-nowrap [word-wrap:normal] [direction:ltr] leading-none antialiased
+                                                text-[52px] text-white text-center mx-auto'/>
+                                          </div>
+
+                                          <div className="service-card-content box-border visible text-center text-[16px] text-[#818181] font-[400] leading-[1.5]">
+                                                <h4 className='text-[20px] font-semibold text-[#fff] leading-[1.2380952380952381] mb-[.5rem] mt-0 text-center'>App Development</h4>
+                                          </div>
+                                    </div>
+                              </div>
+            </div>
+      </div>
+</div>
+
     </section>
 
 <section id='skills'>
@@ -194,7 +274,6 @@ const handleShowProject = () => setProject(true);
 
 <section id='project'>
   <SliderProjects setProjectInterface={setProjectInterface}/>
-  {/* <SliderBasic setMovieInfo={setMovieInfo} movies={movies} setMovieData={setMovieData} grouping="trending" sliderHeader = "Trending Movies"/> */}
 </section>
     
     

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook, FaHome, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaFacebook, FaGithub, FaHome, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { MdEmail, MdOutlineHorizontalRule } from 'react-icons/md'
 import { baseImgUrl } from '../helpers/functions-general'
 import { HiDevicePhoneMobile } from 'react-icons/hi2'
@@ -38,15 +38,18 @@ const Footer = () => {
 
     <footer class="footer bg-darkblue py-14">
     <div class="container">
-      <div class="footer__wrapper text-light lg:grid lg:grid-cols-3 ml-56">
+      <div class="footer__wrapper text-light lg:grid lg:grid-cols-3 ml-56 gap-20 place-content-center">
       <div class="footer__socials">
         <img src={`${baseImgUrl}/home/logo.png`} alt="" className=' object-contain size-24'/>
         <p className='mb-5'>Copyright © 2024</p>
         <ul className='flex gap-[2rem]'>
             <li><FaFacebook className='text-accent cursor-pointer text-2xl'/></li>
             <li><FaLinkedin className='text-accent cursor-pointer text-2xl'/></li>
+            <li><FaGithub className='text-accent cursor-pointer text-2xl'/></li>
             <li><FaInstagram className='text-accent cursor-pointer text-2xl'/></li>
             <li><FaTwitter className='text-accent cursor-pointer text-2xl'/></li>
+            <li><MdEmail className='text-accent cursor-pointer text-2xl'/></li>
+
         </ul>
       </div>
       <div class="footer__links">

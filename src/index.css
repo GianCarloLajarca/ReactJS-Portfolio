@@ -87,6 +87,11 @@
       @apply text-accent
     }
 
+    .service-area .single-service-box:before {
+      @apply absolute left-0 top-0 w-full h-full content-[''] scale-0 [transition:all_0.3s_ease-in] bg-[#2b2b2b] invisible opacity-0 text-center
+      
+    }
+
   }
 
 

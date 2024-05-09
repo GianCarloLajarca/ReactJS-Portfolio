@@ -24,7 +24,7 @@ const SliderSkills = () => {
                 <h2 className='text-accent text-4xl text-center'>Skills</h2>
                 <p className='text-md text-stone-300 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam exercitationem at aspernatur eligendi labore corrupti.</p>
         </div>
-            <Slider {...settings} className='px-20'>
+            <Slider {...settings} className='px-20 cursor-pointer'>
                 <div className='skills-card p-5 text-center bg-darkblue shadow-md h-[400px]'>
                     <div className='flex flex-col gap-4 p-12'>
                     <img src={`${baseImgUrl}/home/skills-1.png`} alt="" className='w-[7rem] h-[6rem] mx-auto object-contain'/>
@@ -94,6 +94,62 @@ const SliderSkills = () => {
                     <div className='flex flex-col gap-4 p-12'>
                         <img src={`${baseImgUrl}/home/skills-9.png`} alt="" className='w-[7rem] h-[6rem] mx-auto object-contain'/>
                         <h3>SASS</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum impedit natus accusantium eos doloribus ad facilis sunt nihil placeat porro expedita, ut non. Vero sunt dolores dignissimos nam doloremque officia, cumque quisquam quae totam?</p>
+                    </div>   
+                </div>
+                <div className='skills-card p-5 text-center bg-darkblue shadow-md h-[400px]'>
+                    <div className='flex flex-col gap-4 p-12'>
+                        <img src={`${baseImgUrl}/home/skills-10.png`} alt="" className='w-[7rem] h-[6rem] mx-auto object-contain'/>
+                        <h3>Javascript</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum impedit natus accusantium eos doloribus ad facilis sunt nihil placeat porro expedita, ut non. Vero sunt dolores dignissimos nam doloremque officia, cumque quisquam quae totam?</p>
+                    </div>   
+                </div>
+                <div className='skills-card p-5 text-center bg-darkblue shadow-md h-[400px]'>
+                    <div className='flex flex-col gap-4 p-12'>
+                        <img src={`${baseImgUrl}/home/skills-11.png`} alt="" className='w-[7rem] h-[6rem] mx-auto object-contain'/>
+                        <h3>Ui Path Robotic Process Automation</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum impedit natus accusantium eos doloribus ad facilis sunt nihil placeat porro expedita, ut non. Vero sunt dolores dignissimos nam doloremque officia, cumque quisquam quae totam?</p>
+                    </div>   
+                </div>
+                <div className='skills-card p-5 text-center bg-darkblue shadow-md h-[400px]'>
+                    <div className='flex flex-col gap-4 p-12'>
+                        <img src={`${baseImgUrl}/home/skills-12.png`} alt="" className='w-[7rem] h-[6rem] mx-auto object-contain'/>
+                        <h3>Kali Linux</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum impedit natus accusantium eos doloribus ad facilis sunt nihil placeat porro expedita, ut non. Vero sunt dolores dignissimos nam doloremque officia, cumque quisquam quae totam?</p>
+                    </div>   
+                </div>
+                <div className='skills-card p-5 text-center bg-darkblue shadow-md h-[400px]'>
+                    <div className='flex flex-col gap-4 p-12'>
+                        <img src={`${baseImgUrl}/home/skills-13.png`} alt="" className='w-[7rem] h-[6rem] mx-auto object-contain'/>
+                        <h3>Cisco Packet Tracer</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum impedit natus accusantium eos doloribus ad facilis sunt nihil placeat porro expedita, ut non. Vero sunt dolores dignissimos nam doloremque officia, cumque quisquam quae totam?</p>
+                    </div>   
+                </div>
+                <div className='skills-card p-5 text-center bg-darkblue shadow-md h-[400px]'>
+                    <div className='flex flex-col gap-4 p-12'>
+                        <img src={`${baseImgUrl}/home/skills-14.png`} alt="" className='w-[7rem] h-[6rem] mx-auto object-contain'/>
+                        <h3>Ettercap</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum impedit natus accusantium eos doloribus ad facilis sunt nihil placeat porro expedita, ut non. Vero sunt dolores dignissimos nam doloremque officia, cumque quisquam quae totam?</p>
+                    </div>   
+                </div>
+                <div className='skills-card p-5 text-center bg-darkblue shadow-md h-[400px]'>
+                    <div className='flex flex-col gap-4 p-12'>
+                        <img src={`${baseImgUrl}/home/skills-15.png`} alt="" className='w-[7rem] h-[6rem] mx-auto object-contain'/>
+                        <h3>Windows Server 2012</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum impedit natus accusantium eos doloribus ad facilis sunt nihil placeat porro expedita, ut non. Vero sunt dolores dignissimos nam doloremque officia, cumque quisquam quae totam?</p>
+                    </div>   
+                </div>
+                <div className='skills-card p-5 text-center bg-darkblue shadow-md h-[400px]'>
+                    <div className='flex flex-col gap-4 p-12'>
+                        <img src={`${baseImgUrl}/home/skills-16.png`} alt="" className='w-[7rem] h-[6rem] mx-auto object-contain'/>
+                        <h3>SAP Business One</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum impedit natus accusantium eos doloribus ad facilis sunt nihil placeat porro expedita, ut non. Vero sunt dolores dignissimos nam doloremque officia, cumque quisquam quae totam?</p>
+                    </div>   
+                </div>
+                <div className='skills-card p-5 text-center bg-darkblue shadow-md h-[400px]'>
+                    <div className='flex flex-col gap-4 p-12'>
+                        <img src={`${baseImgUrl}/home/skills-17.png`} alt="" className='w-[7rem] h-[6rem] mx-auto object-contain'/>
+                        <h3>SAP S/4 HANA</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio laborum impedit natus accusantium eos doloribus ad facilis sunt nihil placeat porro expedita, ut non. Vero sunt dolores dignissimos nam doloremque officia, cumque quisquam quae totam?</p>
                     </div>   
                 </div>
