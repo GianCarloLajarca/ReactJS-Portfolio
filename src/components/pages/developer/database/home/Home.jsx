@@ -165,7 +165,7 @@ My time at De La Salle Lipa has not only equipped me with technical skills and k
                                           </div>
 
                                           <div className="service-card-content box-border visible text-center text-[16px] text-[#818181] font-[400] leading-[1.5]">
-                                                <h4 className='text-[20px] font-semibold text-[#fff] leading-[1.2380952380952381] mb-[.5rem] mt-0 text-center'>App Development</h4>
+                                                <h4 className='text-[20px] font-semibold text-[#fff] leading-[1.2380952380952381] mb-[.5rem] mt-0 text-center'>Application Development</h4>
                                           </div>
                                     </div>
                               </div>

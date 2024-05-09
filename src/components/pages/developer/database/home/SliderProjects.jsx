@@ -103,8 +103,16 @@ const SliderSkills = ({setProjectInterface}) => {
 
                 <div className='projects-card p-5 text-center bg-darkblue shadow-md h-[600px] hover:bg-accent  hover:bg-opacity-40 transition-all'>
                     <div className='flex flex-col gap-4 p-12'>
+                        <img src={`${baseImgUrl}/home/projects-9.png`} alt="" className='w-full h-[14rem] mx-auto object-contain'/>
+                        <h3>Youtube</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, veniam ex? Repellendus minus omnis laudantium iste? Natus, quae ab soluta doloremque earum aliquam eaque non obcaecati, a odit, eum alias!</p>
+                    </div>   
+                </div>
+
+                <div className='projects-card p-5 text-center bg-darkblue shadow-md h-[600px] hover:bg-accent  hover:bg-opacity-40 transition-all'>
+                    <div className='flex flex-col gap-4 p-12'>
                         <img src={`${baseImgUrl}/home/projects-10.png`} alt="" className='w-full h-[14rem] mx-auto object-contain'/>
-                        <h3>YouTube</h3>
+                        <h3>Starbucks</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, veniam ex? Repellendus minus omnis laudantium iste? Natus, quae ab soluta doloremque earum aliquam eaque non obcaecati, a odit, eum alias!</p>
                     </div>   
                 </div>
